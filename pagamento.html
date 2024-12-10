@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagamento</title>
+    <link rel="stylesheet" href="pagamento.css">
+    <script src="pagamento.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Pagamento</h1>
+        </div>
+        <div class="main-content">
+            <div class="contenuto">
+                <div class="sezione">
+                    <h2>Opzioni di Consegna</h2>
+                    <div class="opzioni">
+                        <div class="opzione" id="consegna">Consegna</div>
+                        <div class="opzione" id="ritiro">Ritiro</div>
+                    </div>
+                </div>
+
+                <div class="sezione">
+                    <div class="campo-container">
+                        <div class="campo">
+                            <label for="nome"></label>
+                            <input type="text" id="nome" name="nome" placeholder="Nome">
+                        </div>
+                        <div class="campo">
+                            <label for="cognome"></label>
+                            <input type="text" id="cognome" name="cognome" placeholder="Cognome">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sezione">
+                    <label id="indirizzo" for="indirizzo"></label>
+                    <input type="text" id="indirizzo" name="indirizzo" placeholder="Indirizzo e Numero Civico">
+                </div>
+
+                <div id="aggiungiazienda">
+                    <h3>Aggiungi Azienda, C/O, App, Interno, Unità</h3>
+                </div>
+
+                <div class="sezione">
+                    <div class="campo-container">
+                        <div class="campo">
+                            <label for="cap"></label>
+                            <input type="text" id="cap" name="cap" placeholder="CAP">
+                        </div>
+                        <div class="campo">
+                            <label for="citta"></label>
+                            <input type="text" id="citta" name="citta" placeholder="Città">
+                        </div>
+                        <div class="campo">
+                            <label for="paese"></label>
+                            <input type="text" id="paese" name="paese" placeholder="Paese/Regione">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sezione">
+                    <div class="campo-container">
+                        <div class="campo">
+                            <label for="email"></label>
+                            <input type="email" id="email" name="email" placeholder="Email">
+                        </div>
+                        <div class="campo">
+                            <label for="cellulare"></label>
+                            <input type="tel" id="cellulare" name="cellulare" placeholder="Numero di Cellulare">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sezione">
+                    <button id="salvaButton" disabled>Salva e Continua</button>
+                </div>
+                
+            </div>
+
+            <div class="carrello">
+                <h2>Carrello</h2>
+                <div class="carrello-item">
+                    <div>Subtotale</div>
+                    <div>239,90 €</div>
+                </div>
+                <div class="carrello-item">
+                    <div>Costi di Spedizione</div>
+                    <div>0,00 €</div>
+                </div>
+                <div class="carrello-item">
+                    <div>Totale</div>
+                    <div>239,00 €</div>
+                </div>
+                <hr>
+                <p>In arrivo entro il 15 ottobre</p>
+                <div class="info-aggiuntive">
+                    <div class="scarpas">
+
+                        <div class="foto">
+                            <img src="Immagini/scarpa-dunk-low-15mQNw.png" alt="scarpa-dunk-low-15mQNw30">
+                        </div>
+                        <div class="descrizione">
+                            <h5>Nike Dunk Low ''Panda''</h5>
+                            <ul>
+                                <li>Scarpa donna</li>
+                                <li>Bianco/Nero</li>
+                                <li>Taglia/Misura  43</li>
+                                <li>Quantita'  1</li>
+                                <li class="icone"> 
+                                    <img src="Loghi/gift.png" alt="#">
+                                    <img src="Loghi/heart.png" alt="#"> 
+                                    <img src="Loghi/bin.png" alt="#" class="bin">
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="prezzo"><h5>119.90€</h5></div>
+                    </div>
+            
+                        <div class="prezzo">
+                            
+                        </div>
+                    </div>
+                     <div class="scarpas">
+
+            <div class="foto">
+                <img src="Immagini/scarpa-dunk-lowblu.png" alt="Nikeairforceuno">
+            </div>
+
+            <div class="descrizione">
+                <h5>Nike Dunk Low "BLU"</h5>
+                <ul>
+                    <li>Scarpa Uomo</li>
+                    <li>Bianco/Blu</li>
+                    <li>Taglia/Misura  42</li>
+                    <li>Quantita'  1</li>
+                    <li class="icone"> 
+                        <img src="Loghi/gift.png" alt="#">
+                        <img src="Loghi/heart.png" alt="#"> 
+                        <img src="Loghi/bin.png" alt="#" class="bin">
+                    </li>
+                </ul>
+            </div>
+
+            <div class="prezzo">
+                <h5>119.90€</h5>
+            </div>
+        </div>
+        </div>
+        </div>
+        </div>
+
+</div>
+
+    </div>
+           <!-- popup acquisto an -->
+           <div id="modal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>Completa il tuo acquisto.</h3>
+                    <p>Paese/Regione di fatturazione</p>
+                    <div class="modal-header-info">
+                        <span>Italia</span>
+                        <a href="#" class="modifica">Modifica</a>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <label>
+                        <input type="checkbox" id="giftCard">
+                        Possiedi una gift card, un voucher o un codice promozionale?
+                    </label>
+                    <p>Seleziona metodo di pagamento</p>
+                    <label>
+                        <input type="checkbox" id="cartaCredito" class="checkbox">
+                        Carta di credito <img src="Loghi/credit-card (1).png ">
+                    </label>
+                    <label>
+                        <input type="checkbox" id="paypal" class="checkbox">
+                        Paypal <img src="Loghi/paypal (1).png">
+                    </label>
+                    <label>
+                        <input type="checkbox" id="google" class="checkbox">
+                        Google <img src="Loghi/google-pay (1).png">
+                    </label>
+                    <div id="error-message" style="color: red; display: none;">Per favore, compila tutti i campi obbligatori.</div>
+                </div>
+                <div class="border-box">
+                    <label for="carta"></label>
+                    <input type="text" id="carta" name="carta" placeholder="Inserisci numero Carta">
+                    <label for="mese"></label>
+                    <input type="date" id="mese" name="mese" placeholder="MM/AA">
+                    <label for="cvv"></label>
+                    <input type="text" id="cvv" name="cvv" placeholder="CVV">
+                    
+                </div>
+                <div id="paypal-google-email" style="display: none;">
+                    <label for="emailPaypalGoogle"></label>
+                    <input type="text" id="emailPaypalGoogle" placeholder="Inserisci email">
+                </div>
+                
+                <a href="Ringraziamento.html"><button id="acquistaButton">Acquista</button></a>
+            </div>
+        </div>
+        
+</body>
+</html>

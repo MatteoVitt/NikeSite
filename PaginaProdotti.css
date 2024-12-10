@@ -1,0 +1,592 @@
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    margin: 0;
+}
+
+#capo {
+    border: solid 1px rgba(0, 0, 0, 0);
+    height: 120px;
+}
+
+#capo div {
+    border: solid 1px rgba(255, 0, 0, 0);
+    height: 40px;
+}
+
+#capo div:first-child {
+    background-color: rgb(220, 220, 220);
+}
+
+#capo div:nth-child(2) {
+    background-color: rgb(245, 244, 244);
+}
+
+#capo div:last-child {
+    background-color: rgb(220, 220, 220);
+}
+
+#capo div ul {
+    padding: 0;
+    margin: 0;
+}
+
+#capo div nav {
+    border: solid 1px rgba(0, 0, 0, 0);
+    float: left;
+    max-width: 50%;
+}
+
+#brand ul li {
+    float: left;
+}
+
+#capo1 nav {
+    width: 50%;
+    border: solid 1px black;
+}
+
+#brand img {
+    width: 30px;
+    height: 30px;
+    margin-left: 7px;
+}
+
+#capo1 nav:last-child {
+    height: 100%;
+    border: solid 1px rgba(0, 0, 0, 0);
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 5px;
+}
+
+#capo1 nav:last-child ul {
+    text-align: right;
+    display: flex;
+}
+
+#capo1 nav:last-child ul li {
+    margin-left: 7px;
+    line-height: 35px;
+    cursor: pointer;
+    font-size: 0.7em;
+}
+
+#capo1 nav:last-child ul li:hover {
+    color: gray;
+}
+
+#secbanner nav:nth-child(1) {
+    width: 33.33%;
+    height: 100%;
+    border: solid 1px rgba(0, 0, 0, 0);
+}
+
+#secbanner nav:first-child img {
+    width: 60px;
+    height: 40px;
+    margin-left: 10px;
+}
+
+#secbanner nav:nth-child(2) {
+    width: 33.33%;
+    height: 100%;
+    border: solid 1px rgba(0, 0, 0, 0);
+    display: flex;
+    justify-content: center;
+    line-height: 20px;
+}
+
+#secbanner nav:nth-child(2) ul {
+    display: flex;
+    justify-content: center;
+}
+
+#secbanner nav:nth-child(2) li {
+    padding: 7px;
+    cursor: pointer;
+    font-size: 90%;
+    transition: 0.1s;
+}
+
+#secbanner nav:nth-child(2) li:hover {
+    border-bottom: 3px solid black;
+}
+
+#secbanner nav:nth-child(3) {
+    width: 33.33%;
+    height: 100%;
+    border: solid 1px rgba(0, 0, 0, 0);
+}
+
+#terbanner {
+    display: flex;
+    justify-content: right;
+}
+
+#terbanner nav {
+    display: flex;
+    justify-content: center;
+}
+
+#terbanner nav:nth-child(1) {
+    width: 30%;
+}
+
+#terbanner nav:nth-child(2) {
+    width: 20%;
+}
+
+#terbanner img {
+    width: 20px;
+    height: 20px;
+    margin-top: 7px;
+    margin-left: 8px;
+    cursor: pointer;
+}
+
+#cerca {
+    border-radius: 30px;
+    border: black 1px solid;
+    margin-top: 3px;
+    height: 80%;
+    width: 100%;
+}
+
+#sconto {
+    display: flex;
+    justify-content: center;
+}
+
+#sconto ul {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#sconto li:nth-child(1) {
+    text-align: center;
+    margin-top: 2px;
+    font-size: 90%;
+}
+
+#sconto li:nth-child(2) {
+    margin-top: 2px;
+    font-size: 55%;
+}
+
+#menu ul li {
+    position: relative;
+    display: inline-block;
+}
+
+#menu ul li .boxnovita {
+    display: none;
+    position: fixed;
+    background-color: white;
+    padding: 0;
+    justify-content: center;
+    z-index: 1000;
+    margin-top: 11px;
+    width: 100%; 
+    height: fit-content;
+    
+    transition: 1s;
+    cursor: auto;
+    left: 0;
+    right: 0;
+}
+
+#menu ul li:hover > .boxnovita {
+    display: flex;
+    flex-wrap: wrap; 
+    
+}
+
+#menu ul li .boxnovita div{
+    
+    width: 16%;
+    display: flex;
+    margin-right: 0;
+    height: fit-content;
+    background-color: white;
+    margin-left: 20px;
+
+}
+#menu ul li .boxnovita div ul {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-top: 25px;
+}
+
+
+#menu ul li .boxnovita div ul li strong {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    
+    font-size: 1.1em;
+}
+
+
+#menu ul li .boxnovita div ul li {
+    width: 100%;
+    border-bottom: none;
+    color: gray;
+    padding: 5px 10px; 
+    margin-top: -5px ;
+    
+       
+}
+
+#menu ul li .boxnovita div ul li:hover {
+   color: rgb(0, 0, 0);
+   border-bottom: none;
+}
+
+main{
+    font-size: 0.9em;
+}
+
+main > div img{
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+}
+
+main > section{
+    margin: 50px;
+}
+
+main > section > div > div{
+    margin: 20px;
+}
+main > section > div >div > div{
+    max-width: 33.33%;
+}
+
+main > section > div >div img{
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between; /* Distribuisce equamente lo spazio tra i box */
+    gap: 5px; /* Spaziatura tra i box */
+}
+
+h2{
+    font-size: 1.2em;
+    margin-left: 0px;
+}
+
+
+.box {
+    flex: 1; /* I box prendono tutti lo stesso spazio disponibile */
+    text-align: left;
+    cursor: pointer;
+}
+
+.descrizione{
+    padding: 10px;
+}
+
+.nome{
+    font-weight: bold;
+}
+
+.genere{
+    color: grey;
+}
+
+.container-testata{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.box-indietro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    margin-left: auto;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: lightgray;
+    text-align: center;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.box-avanti{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: lightgray;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+.member {
+    position: relative; /* Necessario per il posizionamento assoluto all'interno */
+    width: 300px; /* Larghezza del box, modificare a seconda delle esigenze */
+    cursor: pointer;
+}
+
+.text-over {
+    position: absolute;
+    bottom: 0; /* Posiziona il contenuto all'inizio del box */
+    left: 0; /* Posiziona il contenuto all'inizio del box */
+    width: 100%;
+    padding: 10px;
+    color: white;
+    
+}
+
+.text-over p {
+    margin: 0;
+    margin-top: 50px;
+    margin-left: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.over1{
+    
+    font-size: 0.8em;
+}
+
+.over2{
+    font-size: 1em;
+}
+
+.text-over button{
+    margin: 50px auto 50px 30px;
+    border-radius: 30px;
+    background-color: white;
+    font-size: 1em;
+    padding: 10px;
+    border: 0;
+    transition: 0.5s;
+}
+
+.text-over button:hover{
+    background-color: rgb(179, 179, 179);
+    cursor: pointer;
+}
+#grande{
+    border: 2px solid rgba(0, 0, 0, 0);
+    height: 600px;
+    max-width: 700px;
+    display: block;
+    margin: auto;
+    margin-top: 40px;
+    overflow: auto;
+}
+#schedine{
+    border: rgba(250, 128, 114, 0) solid 2px;
+    height: 596px;
+    float: left;
+    width: 80px;
+}
+#schedone{
+    border: solid rgba(0, 0, 0, 0) 2px;
+    float: left;
+    height: 450px;
+    width: 320px;
+        align-items: center;
+        justify-content: center;
+        overflow: auto;
+    }
+
+#taglie{
+    border: solid rgba(76, 32, 32, 0) 2px;
+    float: left;
+    height: 596px;
+    width: 296px;
+    
+    
+}
+.schedine{
+    border: solid rgba(76, 32, 32, 0) 2px;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    height: 59px;
+}
+.schedine :hover{
+    opacity: 60%;
+}
+.schedine img{
+    margin: auto;
+    object-fit: contain;
+    
+}
+.schedine video{
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 100%;   
+}
+#schedone img,
+#schedone video {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#taglie>div{
+    border: solid 2px rgba(128, 128, 128, 0);
+    display: flex;
+    flex-direction: column;
+}
+#taglie>div:first-child{
+    height: 30%;
+    margin-left: 10px;
+}
+#taglie>div:first-child h3{
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+#taglie>div:first-child h5{
+    margin-top: 5px;
+}
+#taglie>div:nth-child(2){
+    height: 5%;
+    margin-left: 10px;
+}
+#taglie>div:nth-child(2) h5{
+    margin-top: 10px;
+    
+}
+#taglie>div:nth-child(3){
+    height: 40%;
+    display:grid ;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3px;
+    margin-left: 10px;
+}
+
+#taglie>div:nth-child(4){
+    height: 18%;
+    margin-left: 10px;
+    padding: 5px;
+}
+.n {
+    
+    background-color: #fffefe;
+    text-align: center;
+    line-height: 33px;
+    font-size: 0.9em;
+    border: 2px solid #000000;
+    border-radius: 4px;
+    transition: 0.2s;
+}
+.n:hover{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    cursor: pointer;
+}
+.aggiungi{
+    border: solid rgb(0, 0, 0) 2px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin-top: 4px;
+    border-radius: 50px;
+    text-align: center;
+    line-height: 40px;
+    color: white;
+    background-color: #000000;
+    transition: 0.3s;
+}
+.salva{
+    border: solid rgb(218, 218, 218) 2px;
+    display: flex;
+    height: 100%;
+    margin-top: 4px;
+    border-radius: 50px;
+    justify-content: center;
+    line-height: 40px;
+    color: rgb(0, 0, 0);
+    background-color: #ffffff;
+    align-items: center;
+    transition: 0.3s;
+}
+.salva img{
+    width: 7%;
+    height: 50%;
+    margin-left: 8px;
+}
+.aggiungi:hover{
+    opacity: 70%;
+    cursor: pointer;
+}
+.salva:hover{
+    border: #000000 solid 2px;
+    cursor: pointer;
+}
+
+#fixedInfo {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 300px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    display: none; /* Nascondi di default */
+    z-index: 1000;
+}
+
+#fixedInfo img {
+    max-width: 100%;
+    height: auto;
+}
+
+#overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Oscuramento */
+    z-index: 999; /* Deve essere appena sotto il div fisso */
+    display: none; /* Nascondi di default */
+}
+
+
+#popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px 40px;
+    background-color: #cfcfcf;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    border-radius: 8px;
+    z-index: 1100; /* Deve essere sopra tutto */
+    display: none; /* Nascondi di default */
+    
+}
+
+.hidden {
+    display: none;
+}
